@@ -14,5 +14,12 @@ class ExampleController extends Controller
         //
     }
 
-    //
+    public function test()
+    {
+        return 'this is test';
+    }
+    public function postTest()
+    {
+        return 'this is post test';
+    }
 }
