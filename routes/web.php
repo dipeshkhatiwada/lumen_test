@@ -21,6 +21,8 @@ $router->group(['prefix' => 'api'], function () use ($router) {
     $router->post('/register', 'UserController@register');
     $router->post('/login', 'UserController@login');
 
+    $router->get('/setting/{group}', 'SettingController@fetch');
+
     $router->get('/posts', 'PostController@index');
     $router->post('/posts', 'PostController@store');
 
